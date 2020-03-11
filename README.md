@@ -1,10 +1,16 @@
 
 # Slides
+These slides are generated from
+[Github flavoured Markdown](https://github.github.com/gfm/)
+to
+[LaTeX Beamer](https://github.github.com/gfm/)
+with
+[pandoc](https://pandoc.org/).
 
 ## 2020
 
 ### Pandoc
-A few examples of pandoc usage to generate beamer presentations.
+A few examples of Pandoc usage to generate Beamer presentations from Markdown syntax.
 [Markdown](https://github.com/thodg/slides/blob/master/pandoc.md)
 [PDF](https://github.com/thodg/slides/blob/master/pandoc.pdf)
 
