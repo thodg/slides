@@ -3,6 +3,7 @@ FONTSIZE = 8pt
 
 MD = \
 	bsd.md \
+	pandoc.md \
 	railsonlisp.md \
 	test.md
 
