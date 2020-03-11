@@ -1,11 +1,10 @@
 THEME = Warsaw
+FONTSIZE = 8pt
 
 MD = \
 	bsd.md \
+	railsonlisp.md \
 	test.md
-
-TEX = \
-	railsonlisp.tex
 
 all: pdf
 
@@ -17,7 +16,7 @@ clean:
 
 .md.pdf:
 	mkdir -p "${.IMPSRC:%.md=%}"
-	cd "${.IMPSRC:%.md=%}" && pandoc -st beamer -V theme:${THEME} -o ../$@ -f gfm ../${.IMPSRC}
+	cd "${.IMPSRC:%.md=%}" && pandoc -st beamer -V theme:${THEME} -V fontsize:${FONTSIZE} -o ../$@ -f gfm ../${.IMPSRC}
 
 PDF = \
 	${MD:%.md=%.pdf} \
