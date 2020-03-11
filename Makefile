@@ -1,10 +1,10 @@
 THEME = Warsaw
 
 MD = \
+	bsd.md \
 	test.md
 
 TEX = \
-	bsd.tex \
 	railsonlisp.tex
 
 all: pdf
