@@ -1,18 +1,31 @@
+THEME = Warsaw
+
 MD = \
 	test.md
-THEME = Warsaw
+
+TEX = \
+	railsonlisp.tex
 
 all: pdf
 
-.SUFFIXES: .md .pdf
+.SUFFIXES: .md .pdf .tex
 
 clean:
 	rm -f ${PDF}
 
 .md.pdf:
-	pandoc -st beamer -V theme:${THEME} ${.IMPSRC} -o $@
+	mkdir -p "${.IMPSRC:%.md=%}"
+	cd "${.IMPSRC:%.md=%}" && pandoc -st beamer -V theme:${THEME} -o ../$@ -f gfm ../${.IMPSRC}
 
-PDF = ${MD:%.md=%.pdf}
+.tex.pdf:
+	mkdir -p "${.IMPSRC:%.tex=%}"
+	cd "${.IMPSRC:%.tex=%}" && pdflatex ../${.IMPSRC} && pdflatex ../${.IMPSRC}
+	mv "${.IMPSRC:%.tex=%}/${.IMPSRC:%.tex=%.pdf}" .
+
+PDF = \
+	${MD:%.md=%.pdf} \
+	${TEX:%.tex=%.pdf}
+
 pdf: ${PDF}
 
 .PHONY: all clean pdf
