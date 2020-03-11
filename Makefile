@@ -4,6 +4,7 @@ MD = \
 	test.md
 
 TEX = \
+	bsd.tex \
 	railsonlisp.tex
 
 all: pdf
