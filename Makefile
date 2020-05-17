@@ -3,11 +3,18 @@ FONTSIZE = 8pt
 
 MD = \
 	bsd \
+	modal-logic \
 	pandoc \
 	railsonlisp \
 	test
 
 TEX =
+
+PDF = \
+	bsd.pdf \
+	pandoc.pdf \
+	railsonlisp.pdf \
+	test.pdf
 
 all: pdf
 
@@ -17,10 +24,6 @@ clean:
 
 %.pdf: %/index.md
 	cd "${@:%.pdf=%}" && pandoc -st beamer -V theme:${THEME} -V fontsize:${FONTSIZE} -o ../$@ -f gfm index.md
-
-PDF = \
-	${MD:%=%.pdf} \
-	${TEX:%=%.tex.pdf}
 
 pdf: ${PDF}
 
