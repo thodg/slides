@@ -3,6 +3,7 @@ FONTSIZE = 8pt
 
 MD = \
 	bsd \
+	language \
 	modal-logic \
 	pandoc \
 	railsonlisp \
@@ -12,6 +13,7 @@ TEX =
 
 PDF = \
 	bsd.pdf \
+	language.pdf \
 	pandoc.pdf \
 	railsonlisp.pdf \
 	test.pdf
