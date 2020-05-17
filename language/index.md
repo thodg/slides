@@ -24,8 +24,7 @@ In model theory a schema allows you to define an ontology,
 that is a definition of what can and cannot be expressed in your
 language.
 
-It is the shape of your language, the rules which make any pattern
-part of the language or not.
+It is a set of rules which make any pattern part of the language or not.
 
 The most used schemas for formal language definition are grammars.
 
@@ -65,12 +64,8 @@ It is a direct application of the language schema.
 The data of the language is directed by the semantics of
 the language.
 
-Usually the schema of the language has an entropy of orders
-of magnitude higher than the available storage space for the
-language data.
-
 Data is a choice from the possibilities of the language schema
 driven by the semantics of the language.
 
-It is the most precise use of the language. Each datum represents
-a single valid use of the language and can be uniquely identified.
+Each datum represents a single valid use of the language and can
+be uniquely identified.
