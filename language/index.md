@@ -61,8 +61,7 @@ semantics.
 
 It is a direct application of the language schema.
 
-The data of the language is directed by the semantics of
-the language.
+Semantics are appliable to all data.
 
 Data is a choice from the possibilities of the language schema
 driven by the semantics of the language.
