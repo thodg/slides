@@ -29,7 +29,12 @@ part of the language or not.
 
 The most used schemas for formal language definition are grammars.
 
-Is there a grammar for each possible schema ?
+The schema is a generalistic view of all the data that can be
+expressed in the language.
+
+It can be a relative process where parts of the structure of the
+language are combined to form a more complex schema, e.g. a
+grammar made of simpler rules.
 
 ### Semantics
 
@@ -47,6 +52,9 @@ A number of programming languages also export the semantics of
 lower-level constructs such as mathematical operations from the processor
 or disk access from the kernel.
 
+Semantics tells you how your language relates to other languages.
+It is a connection to other languages.
+
 ### Data
 
 Data is valid use of the language for reasons pertaining to its
@@ -63,3 +71,6 @@ language data.
 
 Data is a choice from the possibilities of the language schema
 driven by the semantics of the language.
+
+It is the most precise use of the language. Each datum represents
+a single valid use of the language and can be uniquely identified.
