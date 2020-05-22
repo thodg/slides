@@ -2,45 +2,30 @@
 
 ## 1. Notation
 
-### 1.1 Not
+### 1.1 ¬A
 "Not A"
 
-¬A
-
-### 1.2 Necessarilly
+### 1.2 □A
 "It is necessary that A"
 
-□A
-
-### 1.3 Possibly
+### 1.3 ◊A
 "It is possible that A"
 
-◊A
-
-### 1.4 Implies
+### 1.4 A → B
 "If A then B"
 
-A → B
-
-### 1.5 Conjunction
+### 1.5 A ∧ B
 "A and B"
 
-A ∧ B
-
-### 1.6 Disjunction
+### 1.6 A ∨ B
 "A or B"
 
-A ∨ B
-
-### 1.7 Exclusive disjunction
+### 1.7 A ⊕ B
 "A xor B"
 
-A ⊕ B
-
-### 1.8 Mutual implication
+### 1.8 A ↔ B
 "If A then B and if B then A"
 
-A ↔ B
 
 ## 2. Contruction
 K is a weak logic (Saul Kripke)
