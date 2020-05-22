@@ -18,6 +18,9 @@ A is a theorem of K → □A is a theorem of K
 ### 2.2 Distribution axiom
 □(A → B) → (□A → □B)
 
+### 2.3 Operator ◊
+◊A = ¬□¬A
+
 ## 3. T
 T is K plus the following axiom :
 
